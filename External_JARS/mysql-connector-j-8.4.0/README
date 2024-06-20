@@ -1,0 +1,55 @@
+Course Management System
+Overview
+The Course Management System is a Java-based application designed to manage courses, students, teachers, and modules within an educational institution. It utilizes MySQL as the database backend and integrates with Swing for the user interface.
+
+Features
+User Authentication: Secure login and authentication system for administrators.
+Course Management: Create, update, and delete courses.
+Module Management: Manage modules within each course, including core and optional modules.
+Student and Teacher Management: Track students and teachers associated with courses.
+Results and Enrollment: Record student enrollment in courses and maintain module-wise results.
+Technologies Used
+Java: Core programming language for backend logic.
+MySQL: Database management system for storing application data.
+Swing: Java's GUI toolkit used for building the user interface.
+MySQL Connector/J: JDBC driver for MySQL connectivity in Java applications.
+Prerequisites
+Before running the application, ensure you have the following installed:
+
+Java Development Kit (JDK) 8 or higher
+MySQL Server
+MySQL Connector/J (JDBC driver for MySQL)
+Setup Instructions
+Database Setup:
+
+Install MySQL Server.
+Create a database named course_management_system.
+Execute the SQL scripts in database-scripts folder to create tables and populate initial data.
+Java Setup:
+
+Install JDK 8 or higher.
+Ensure MySQL Connector/J JAR file (mysql-connector-java-8.x.x.jar) is downloaded and available in the project's classpath.
+Running the Application:
+
+Compile the Java source files.
+Run the App class, which serves as the entry point.
+Example command:
+
+bash
+Copy code
+java -cp "/path/to/mysql-connector-java-8.x.x.jar:src" App
+Project Structure
+src/: Contains all Java source code files.
+External_JARS/: Directory for external libraries, including MySQL Connector/J.
+database-scripts/: SQL scripts for database setup and initialization.
+Troubleshooting
+MySQL Connection Issues: Check MySQL server status, database credentials, and JDBC driver configuration in DatabaseManager.java.
+Java Environment: Ensure JDK and classpath configurations are correct.
+Contributing
+Contributions are welcome! Fork the repository, make your changes, and submit a pull request. Please adhere to the project's coding conventions and standards.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+For questions or support, contact Your Nimo.
